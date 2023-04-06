@@ -11,5 +11,12 @@ public class Enemy{
 
  }
 
+ public void RandomAttack(){
+    Random randAttack = new Random();
+    int att = AttackList[randAttack.Next(AttackList.Count)];
+    Console.WriteLine($"{AttackList[att].name} does {att.dam} damage!");
+    
+ }
+
 
 }
